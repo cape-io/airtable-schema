@@ -13,8 +13,10 @@ function script() {
 function getUrl(baseId) {
   return `https://airtable.com/login?continue=/${baseId}/api/docs`
 }
-
-exports.default = function ({ baseId, email, password }) {
+function getSavePath(baseId) {
+  return path.resolve(__dirname, 'downloads', `${baseId}.json`)
+}
+module.exports = function ({ baseId, email, password }) {
   nightmare
     .goto(getUrl(baseId))
     .wait(1000)
@@ -27,7 +29,7 @@ exports.default = function ({ baseId, email, password }) {
     .evaluate(script)
     .end()
     .then(function (result) {
-      return writeJson(path.resolve(__dirname, 'downloads', `${BASE}.json`), result)
+      return writeJson(getSavePath(baseId), result)
     })
     .catch(function (error) {
       console.error('Error:', error);
