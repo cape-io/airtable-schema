@@ -4,7 +4,7 @@ Download Airtable schema to JSON file.
 
 ## Clone or download the repository.
 
-`git clone https://github.com/cape-io/airtable-schema.git && cd airtable-schema`
+`git clone https://github.com/cape-io/airtable-schema.git && cd airtable-schema && npm i`
 
 ## Edit run.js
 
