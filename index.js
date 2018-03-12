@@ -10,11 +10,11 @@ function script() {
       _.set(item, 'foreignTable', _.get(item, 'foreignTable.id')))))
 }
 
-eport getUrl(baseId) {
+function getUrl(baseId) {
   return `https://airtable.com/login?continue=/${baseId}/api/docs`
 }
 
-export default ({ baseId, email, password }) {
+exports.default = function ({ baseId, email, password }) {
   nightmare
     .goto(getUrl(baseId))
     .wait(1000)
