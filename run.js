@@ -1,4 +1,4 @@
-import fetch from './index'
+const fetch = require('./index')
 
 fetch({
   email: 'me@example.com',
