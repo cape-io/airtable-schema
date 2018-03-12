@@ -6,6 +6,8 @@ Download Airtable schema to JSON file.
 
 `git clone https://github.com/cape-io/airtable-schema.git && cd airtable-schema && npm i`
 
+If you copy paste the above packages will be installed. Yarn will work too if you prefer.
+
 ## Edit run.js
 
 Make sure you have password enabled on your Airtable account.
