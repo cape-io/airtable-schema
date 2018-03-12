@@ -10,7 +10,7 @@ Download Airtable schema to JSON file.
 
 Make sure you have password enabled on your Airtable account.
 
-Change the values of `email`, `password`, `baseId`. The `baseId` can be gotten from the URL https://airtable.com/`{baseId}`/api/docs.
+Change the values of `email`, `password`, `baseId`. The `baseId` can be gotten from the URL airtable.com/`{baseId}`/api/docs.
 
 ## npm start
 
