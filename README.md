@@ -14,4 +14,4 @@ Change the values of `email`, `password`, `baseId`. The `baseId` can be gotten f
 
 ## npm start
 
-Running `npm start` will open an electron app browser window that will fill in your username and password. Once the api page loads it will download a json file with the schema information to the `downloads` directory. The file will be named something like `appqzkSBBUET2l1mJ.json`.
+Running `npm start` will open an electron app browser window that will fill in your username and password. Once the api page loads it will download a json file with the schema information to the `downloads` directory. The file will be named something like `./downloads/appqzkSBBUET2l1mJ.json`.
